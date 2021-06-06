@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+<html lang="es-AR" xml:lang="es-AR">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Bruno Cuevas" />
+
+
+<title>Física II - Electricidad y Magnetismo</title>
+
+<script src="Fisica-II---Resumen-final_files/header-attrs-2.8/header-attrs.js"></script>
+<script src="Fisica-II---Resumen-final_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="Fisica-II---Resumen-final_files/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="Fisica-II---Resumen-final_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="Fisica-II---Resumen-final_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="Fisica-II---Resumen-final_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="Fisica-II---Resumen-final_files/navigation-1.1/tabsets.js"></script>
+<link href="Fisica-II---Resumen-final_files/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="Fisica-II---Resumen-final_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Física II - Electricidad y Magnetismo</h1>
+<h4 class="author">Bruno Cuevas</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#básicos"><span class="toc-section-number">1</span> Básicos</a></li>
+<li><a href="#carga-eléctrica-y-campo-eléctrico"><span class="toc-section-number">2</span> Carga eléctrica y campo eléctrico</a>
+<ul>
+<li><a href="#principios-de-la-electrostática"><span class="toc-section-number">2.1</span> Principios de la electrostática</a></li>
+<li><a href="#ley-de-coulomb"><span class="toc-section-number">2.2</span> Ley de Coulomb</a></li>
+</ul></li>
+<li><a href="#campo-eléctrico"><span class="toc-section-number">3</span> Campo eléctrico</a>
+<ul>
+<li><a href="#superposición-de-campos-eléctricos"><span class="toc-section-number">3.1</span> Superposición de campos eléctricos</a></li>
+<li><a href="#líneas-de-campo-eléctrico"><span class="toc-section-number">3.2</span> Líneas de campo eléctrico</a></li>
+<li><a href="#dipolos-electricos"><span class="toc-section-number">3.3</span> Dipolos electricos</a></li>
+<li><a href="#campos-eléctricos-a-partir-de-coulomb"><span class="toc-section-number">3.4</span> Campos eléctricos a partir de Coulomb</a></li>
+</ul></li>
+<li><a href="#ley-de-gauss"><span class="toc-section-number">4</span> Ley de Gauss</a>
+<ul>
+<li><a href="#cuerpos-conductores"><span class="toc-section-number">4.1</span> Cuerpos conductores</a></li>
+<li><a href="#campo-eléctrico-para-varias-distribuciones-simétricas-de-carga"><span class="toc-section-number">4.2</span> Campo eléctrico para varias distribuciones simétricas de carga</a></li>
+</ul></li>
+<li><a href="#potencial-electrico"><span class="toc-section-number">5</span> Potencial electrico</a>
+<ul>
+<li><a href="#energia-potencial-electrica"><span class="toc-section-number">5.1</span> Energia potencial electrica</a></li>
+<li><a href="#trabajo-electrico"><span class="toc-section-number">5.2</span> Trabajo electrico</a></li>
+<li><a href="#potencial-electrico-1"><span class="toc-section-number">5.3</span> Potencial electrico</a></li>
+<li><a href="#potencial-electrico-para-varias-distribuciones-de-carga"><span class="toc-section-number">5.4</span> Potencial electrico para varias distribuciones de carga</a></li>
+<li><a href="#superficies-equipotenciales"><span class="toc-section-number">5.5</span> Superficies equipotenciales</a></li>
+</ul></li>
+<li><a href="#movimiento-de-partículas"><span class="toc-section-number">6</span> Movimiento de partículas</a></li>
+<li><a href="#ley-de-ohm"><span class="toc-section-number">7</span> Ley de Ohm</a>
+<ul>
+<li><a href="#circuitos-en-serie"><span class="toc-section-number">7.1</span> Circuitos en serie</a></li>
+<li><a href="#circuitos-en-paralelo"><span class="toc-section-number">7.2</span> Circuitos en paralelo</a></li>
+<li><a href="#fuerza-electromotriz-fem"><span class="toc-section-number">7.3</span> Fuerza electromotriz: fem</a></li>
+<li><a href="#potencia"><span class="toc-section-number">7.4</span> Potencia</a></li>
+</ul></li>
+<li><a href="#capacitancia"><span class="toc-section-number">8</span> Capacitancia</a>
+<ul>
+<li><a href="#energía-potencial-para-un-capacitor-cargado"><span class="toc-section-number">8.1</span> Energía potencial para un capacitor cargado</a></li>
+<li><a href="#capacitores-en-serie"><span class="toc-section-number">8.2</span> Capacitores en serie</a></li>
+<li><a href="#capacitores-en-paralelo"><span class="toc-section-number">8.3</span> Capacitores en paralelo</a></li>
+<li><a href="#capacitor-de-placas-planas"><span class="toc-section-number">8.4</span> Capacitor de placas planas</a></li>
+<li><a href="#capacitor-cilíndrico"><span class="toc-section-number">8.5</span> Capacitor cilíndrico</a></li>
+<li><a href="#capacitor-esférico"><span class="toc-section-number">8.6</span> Capacitor esférico</a></li>
+<li><a href="#capacitores-con-dieléctrico-entre-placas"><span class="toc-section-number">8.7</span> Capacitores con dieléctrico entre placas</a></li>
+<li><a href="#medir-nivel-de-combustible"><span class="toc-section-number">8.8</span> Medir nivel de combustible</a></li>
+</ul></li>
+<li><a href="#kirchhoff"><span class="toc-section-number">9</span> Kirchhoff</a>
+<ul>
+<li><a href="#ley-de-nodos"><span class="toc-section-number">9.1</span> Ley de nodos</a></li>
+<li><a href="#ley-de-mallas"><span class="toc-section-number">9.2</span> Ley de mallas</a></li>
+<li><a href="#sistema-con-capacitor"><span class="toc-section-number">9.3</span> Sistema con capacitor</a></li>
+<li><a href="#pasos"><span class="toc-section-number">9.4</span> Pasos</a></li>
+<li><a href="#signos-y-cosas-a-tener-en-cuenta"><span class="toc-section-number">9.5</span> Signos y cosas a tener en cuenta:</a></li>
+</ul></li>
+<li><a href="#circuitos-rc"><span class="toc-section-number">10</span> Circuitos RC</a>
+<ul>
+<li><a href="#capacitor-cargándose-casos-generales"><span class="toc-section-number">10.1</span> Capacitor cargándose: casos generales</a></li>
+<li><a href="#capacitor-cargándose-carga-inicial-igual-a-cero"><span class="toc-section-number">10.2</span> Capacitor cargándose: carga inicial igual a cero</a></li>
+<li><a href="#capacitor-en-descarga"><span class="toc-section-number">10.3</span> Capacitor en descarga</a></li>
+<li><a href="#carga-máxima-del-capacitor-y-trabajo-de-la-batería"><span class="toc-section-number">10.4</span> Carga máxima del capacitor y trabajo de la batería</a></li>
+<li><a href="#energíacalor-disipado-en-las-resistencias"><span class="toc-section-number">10.5</span> Energía/calor disipado en las resistencias</a></li>
+<li><a href="#potencia-suministrada-por-la-batería"><span class="toc-section-number">10.6</span> Potencia suministrada por la batería</a></li>
+<li><a href="#trabajo-que-hace-la-batería"><span class="toc-section-number">10.7</span> Trabajo que hace la batería</a></li>
+</ul></li>
+<li><a href="#magnetismo"><span class="toc-section-number">11</span> Magnetismo</a>
+<ul>
+<li><a href="#campo-magnético"><span class="toc-section-number">11.1</span> Campo magnético</a></li>
+<li><a href="#fuerzas-magnéticas-sobre-cargas-móviles"><span class="toc-section-number">11.2</span> Fuerzas magnéticas sobre cargas móviles</a></li>
+<li><a href="#dirección-de-la-fuerza-magnética-sobre-cargas-móviles"><span class="toc-section-number">11.3</span> Dirección de la fuerza magnética sobre cargas móviles</a></li>
+<li><a href="#fuerza-de-lorentz-fuerza-sobre-una-partícula-cargada-en-presencia-de-e-y-b"><span class="toc-section-number">11.4</span> Fuerza de Lorentz: fuerza sobre una partícula cargada en presencia de E y B</a></li>
+<li><a href="#líneas-de-campo-magnético"><span class="toc-section-number">11.5</span> Líneas de campo magnético:</a></li>
+<li><a href="#flujo-magnético"><span class="toc-section-number">11.6</span> Flujo magnético</a></li>
+<li><a href="#ley-de-gauss-del-magnetismo"><span class="toc-section-number">11.7</span> Ley de Gauss del magnetismo</a></li>
+<li><a href="#fuerza-magnética-sobre-un-conductor"><span class="toc-section-number">11.8</span> Fuerza magnética sobre un conductor</a></li>
+</ul></li>
+<li><a href="#aplicaciones-del-magnetismo"><span class="toc-section-number">12</span> Aplicaciones del magnetismo</a>
+<ul>
+<li><a href="#tubos-de-rayos-catódicos"><span class="toc-section-number">12.1</span> Tubos de rayos catódicos</a></li>
+<li><a href="#selector-de-velocidades"><span class="toc-section-number">12.2</span> Selector de velocidades</a></li>
+<li><a href="#espectrómetro-de-masas"><span class="toc-section-number">12.3</span> Espectrómetro de masas</a></li>
+<li><a href="#ciclotrón"><span class="toc-section-number">12.4</span> Ciclotrón</a></li>
+</ul></li>
+<li><a href="#fuentes-de-campo-magnético"><span class="toc-section-number">13</span> Fuentes de campo magnético</a>
+<ul>
+<li><a href="#campo-magnético-de-una-carga-en-movimiento"><span class="toc-section-number">13.1</span> Campo magnético de una carga en movimiento</a></li>
+<li><a href="#ley-de-biot-savart"><span class="toc-section-number">13.2</span> Ley de Biot-Savart</a></li>
+<li><a href="#campos-magnéticos"><span class="toc-section-number">13.3</span> Campos magnéticos</a></li>
+<li><a href="#ley-de-ampere"><span class="toc-section-number">13.4</span> Ley de Ampere</a></li>
+<li><a href="#campo-magnético-conductor-recto"><span class="toc-section-number">13.5</span> Campo magnético: conductor recto</a></li>
+<li><a href="#campo-magnético-solenoidebobina"><span class="toc-section-number">13.6</span> Campo magnético: solenoide/bobina</a></li>
+<li><a href="#campo-magnético-bobina-toroidal"><span class="toc-section-number">13.7</span> Campo magnético: bobina toroidal</a></li>
+</ul></li>
+<li><a href="#induccion-electromagnetica"><span class="toc-section-number">14</span> Induccion electromagnetica</a>
+<ul>
+<li><a href="#ley-de-faraday"><span class="toc-section-number">14.1</span> Ley de Faraday</a></li>
+<li><a href="#ley-de-lenz"><span class="toc-section-number">14.2</span> Ley de Lenz</a></li>
+<li><a href="#fuerza-de-laplace"><span class="toc-section-number">14.3</span> Fuerza de Laplace</a></li>
+</ul></li>
+<li><a href="#ecuaciones-de-maxwell-situaciones-temporales"><span class="toc-section-number">15</span> Ecuaciones de Maxwell: situaciones temporales</a>
+<ul>
+<li><a href="#ley-de-gauss-1"><span class="toc-section-number">15.1</span> Ley de Gauss</a></li>
+<li><a href="#ley-de-gauss-magnetismo"><span class="toc-section-number">15.2</span> Ley de Gauss: magnetismo</a></li>
+<li><a href="#ley-de-ampere-1"><span class="toc-section-number">15.3</span> Ley de Ampere</a></li>
+<li><a href="#ley-de-faraday-1"><span class="toc-section-number">15.4</span> Ley de Faraday</a></li>
+</ul></li>
+<li><a href="#aplicaciones-del-electromagnetismo"><span class="toc-section-number">16</span> Aplicaciones del electromagnetismo</a>
+<ul>
+<li><a href="#transformador"><span class="toc-section-number">16.1</span> Transformador</a></li>
+<li><a href="#detector-de-metales"><span class="toc-section-number">16.2</span> Detector de metales</a></li>
+<li><a href="#guitarra-eléctrica"><span class="toc-section-number">16.3</span> Guitarra eléctrica</a></li>
+<li><a href="#disyuntor"><span class="toc-section-number">16.4</span> Disyuntor</a></li>
+<li><a href="#horno-a-inducción"><span class="toc-section-number">16.5</span> Horno a inducción</a></li>
+</ul></li>
+<li><a href="#preguntas-práctica-7"><span class="toc-section-number">17</span> Preguntas: práctica 7</a></li>
+<li><a href="#protips-para-no-recursar."><span class="toc-section-number">18</span> Protips para no recursar.</a></li>
+</ul>
+</div>
+
+<div style="page-break-after: always;"></div>
+<div id="básicos" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Básicos</h1>
+<p><strong>Multiplos y submultiplos del metro:</strong> se aplica el mismo concepto para otras medidas.</p>
+<p><strong>Subdivisiones de metros cuadrados:</strong></p>
+<strong>Constantes:</strong>
+<p><strong>Unidades:</strong></p>
+<strong>Distribuciones de carga</strong>
+<p><strong>Integrales:</strong></p>
+<strong>Perimetros, areas y volumenes</strong>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="carga-eléctrica-y-campo-eléctrico" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Carga eléctrica y campo eléctrico</h1>
+<div id="principios-de-la-electrostática" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> Principios de la electrostática</h2>
+<ol style="list-style-type: decimal">
+<li><p>Cargas de igual signo se repelen y de distinto signo se atraen.</p></li>
+<li><p>La carga eléctrica se conserva.</p></li>
+<li><p>La unidad fundamental de carga es la del electrón y la del protón.</p></li>
+</ol>
+</div>
+<div id="ley-de-coulomb" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Ley de Coulomb</h2>
+<p>La ley de Coulomb nos dice que la magnitud de la fuerza eléctrica entre dos cargas puntuales es directamente proporcional al producto entre las cargas e inversamente proporcional al cuadrado de la distancia.</p>
+<p><span class="math display">\[F = k\frac{\vert q_1q_2 \vert}{r^2} = \frac{1}{4\pi \varepsilon_0} \frac{\vert q_1q_2 \vert}{r^2} \qquad \overrightarrow F = \frac{q_1q_2}{4\pi \varepsilon_0} \frac{(r_c-r_f)}{\vert r_c - r_f  \vert^3}= \frac{q_1q_2}{4\pi\varepsilon_0}\hat{r}\]</span></p>
+<p>La unidad de carga eléctrica es el <em>Coulomb</em>.</p>
+<p><strong>Principio de superposición de fuerzas:</strong> la fuerza total ejercida sobre una carga eléctrica por distintas cargas es igual a la suma vectorial de las fuerzas individuales de cada una.</p>
+</div>
+</div>
+<div id="campo-eléctrico" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Campo eléctrico</h1>
+<p>La fuerza eléctrica ejercida sobre un cuerpo cargado es producto del campo eléctrico que otros cuerpos cargados originan. El campo eléctrico nos dice la fuerza que se ejerce por unidad de carga.</p>
+<p><span class="math display">\[\overrightarrow{E} = \frac{\overrightarrow{F_0}}{q_0} \rightarrow \overrightarrow{F_0} = \overrightarrow E q_0\]</span></p>
+<p>Decimos que un campo eléctrico es uniforme cuando la magnitud y la dirección del campo tiene los mismos valores en cualquier parte de una región dada.</p>
+<div id="superposición-de-campos-eléctricos" class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Superposición de campos eléctricos</h2>
+<p>El campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> de cualquier combinación de cargas es la suma vectorial de los campos producidos por cada carga individual.</p>
+<p><span class="math display">\[\overrightarrow E = \frac{\overrightarrow {F}_0}{q_0} =\overrightarrow {E}_1 + \overrightarrow {E}_2 + \overrightarrow {E}_3 ... \]</span></p>
+</div>
+<div id="líneas-de-campo-eléctrico" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> Líneas de campo eléctrico</h2>
+<p>Las líneas de campo nos sirven para poder visualizar el campo eléctrico. - Cada punto de estas líneas es tangente al vector campo eléctrico. En otras palabras, nos muestran la dirección de <span class="math inline">\(\overrightarrow E\)</span> en cada punto.</p>
+<ul>
+<li><p>El espacio que hay entre las líneas de campo dan una idea de la intensidad del campo.</p></li>
+<li><p>Una línea de campo eléctrico comienza en una carga negativa (sumideras de líneas de campo) y finaliza en una positiva.</p></li>
+<li><p>Las líneas de campo nunca se cruzan.</p></li>
+<li><p>Son continuas salvo en donde hay cargas.</p></li>
+</ul>
+</div>
+<div id="dipolos-electricos" class="section level2" number="3.3">
+<h2 number="3.3"><span class="header-section-number">3.3</span> Dipolos electricos</h2>
+<p>Se forman por dos cargas eléctricas de igual magnitud y distinto signo, separadas por una cierta distancia.</p>
+</div>
+<div id="campos-eléctricos-a-partir-de-coulomb" class="section level2" number="3.4">
+<h2 number="3.4"><span class="header-section-number">3.4</span> Campos eléctricos a partir de Coulomb</h2>
+<p><strong>Varilla:</strong> calculamos el campo para los puntos del eje <span class="math inline">\(x\)</span> para una varilla cargada con densidad lineal <span class="math inline">\(\lambda\)</span>.</p>
+<p><span class="math display">\[E = \frac{k\lambda L}{x(x+L)} \]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="ley-de-gauss" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Ley de Gauss</h1>
+<p>La ley de Gauss nos da la relación entre las cargas y el campo que generan dichas cargas, nos dice que el flujo de campo eléctrico en una superficie cerrada es proporcional a la carga neta encerrada por dicha superficie.</p>
+<p>Si el flujo es mayor que cero entonces el número de líneas de campo que salen al exterior es mayor que el número de líneas que entran… Por lo tanto la carga neta encerrada por la SC es positiva. Lo contrario pasa si el flujo es menor que cero. Si el flujo es igual a cero entonces la carga neta encerrada por la SC es cero.</p>
+<p>Podemos expresar esta ley de distintas maneras</p>
+<p><span class="math display">\[\Phi_{_E} = \oint E \cos \phi dA= \oint E_\perp dA=\oint \overrightarrow E \cdot d\overrightarrow A= \frac{Q_{enc}}{\varepsilon_0}\]</span></p>
+<p>Esta ley nos ofrece una relación entre el campo eléctrico en una superficie cerrada y la distribución de carga que hay dentro de esa superficie. Para poder aplicar esta ley es necesario tener en cuenta que la distribución de las cargas debe ser simétrica.</p>
+<div id="cuerpos-conductores" class="section level2" number="4.1">
+<h2 number="4.1"><span class="header-section-number">4.1</span> Cuerpos conductores</h2>
+<p>Los cuerpos conductores son aquellos que permiten la movilidad de cargas eléctricas.</p>
+<p><strong>Influencia de un campo eléctrico externo:</strong> cuando un cuerpo conductor se encuentra en presencia de un campo eléctrico externo, este va a provocar el desplazamiento de cargas móviles. Las cargas positivas se van a mover en dirección de las líneas de campo y las negativas en dirección contraria. Esto es conocido como <em>inducción electrostática</em>.</p>
+<p><strong>Conductor aislado:</strong> si el cuerpo conductor está aislado las cargas móviles no podrán salir del cuerpo conductor y por lo tanto se acumularan en la superficie del cuerpo, alcanzando un equilibrio electrostático. Cuando esto sucede se cumplen dos propiedades</p>
+<ol style="list-style-type: decimal">
+<li><p>La densidad de carga <span class="math inline">\(\rho\)</span> será nula.</p></li>
+<li><p>El campo eléctrico también se anula dentro del conductor, el cual queda cargado superficialmente. Las cargas que se encuentran en exceso siempre se acomodan superficialmente en un conductor.</p></li>
+</ol>
+</div>
+<div id="campo-eléctrico-para-varias-distribuciones-simétricas-de-carga" class="section level2" number="4.2">
+<h2 number="4.2"><span class="header-section-number">4.2</span> Campo eléctrico para varias distribuciones simétricas de carga</h2>
+<p><strong>Para una carga puntual</strong></p>
+<p>El campo eléctrico para una carga puntual es</p>
+<p><span class="math display">\[\overrightarrow E = \frac{1}{4 \pi \varepsilon_0} \frac{q}{r^2} \hat{r} \qquad E = \frac{q}{4\pi\varepsilon_0r^2}\]</span></p>
+<p><strong>Para una esfera conductora de radio R</strong></p>
+<p><span class="math display">\[E = \left\{ \begin{array}{rcl} \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} &amp;\mbox{si} &amp; r &gt; R \\\\ 0 &amp; \mbox{si} &amp; r &lt; R \end{array}\right.\]</span></p>
+<p><strong>Alambre infinito</strong>  Usamos una carga lineal <span class="math inline">\(\lambda\)</span>.</p>
+<p><span class="math display">\[\overrightarrow E = \frac{\lambda}{2\pi\varepsilon_0 r}\hat{r} \qquad E = \frac{1}{2\pi\varepsilon_0} \frac{\lambda}{r}\]</span></p>
+<p><strong>Cilindro conductor de radio R</strong></p>
+<p>Usamos carga lineal <span class="math inline">\(\lambda\)</span>.</p>
+<p><span class="math display">\[E = \left\{ \begin{array}{rcl} \frac{1}{2\pi\varepsilon_0} \frac{\lambda}{r} &amp; \mbox{si} &amp; r &gt; R \\ \\ 0 &amp;\mbox{si} &amp; r&lt;R \end{array} \right.\]</span></p>
+<p><strong>Esfera aislante de radio R cargada en volumen</strong></p>
+<p>Usamos carga distribuida volumétricamente <span class="math inline">\(\rho\)</span>.</p>
+<p><span class="math display">\[E=\left\{ \begin{array}{rcl} \frac{1}{4\pi\varepsilon_0} \frac{Q}{r^2} &amp;\mbox{si}&amp; r&gt;R \\ \\  \frac{1}{4\pi\varepsilon_0}\frac{Qr}{R^3} &amp;\mbox{si}&amp; r &lt; R\end{array}\right. \rightarrow E=\left\{ \begin{array}{rcl} \frac{\rho R^3}{3\varepsilon_0 r^2}&amp;\mbox{si}&amp; r&gt;R \\ \\  \frac{\rho r}{3\varepsilon_0} &amp;\mbox{si}&amp; r &lt; R\end{array}\right.\]</span></p>
+<p><strong>Plancha infinita</strong> </p>
+<p>Usamos carga superficial <span class="math inline">\(\sigma\)</span>. Para cualquier punto del espacio tenemos que el campo es</p>
+<p><span class="math display">\[E = \frac{\sigma}{2\varepsilon_0}\]</span></p>
+<p><strong>Dos placas conductoras con cargas opuestas</strong></p>
+<p>Usamos densidades superficiales de carga <span class="math inline">\(+\sigma\)</span> y <span class="math inline">\(-\sigma\)</span>. Para cualquier punto entre las placas el campo va a ser</p>
+<p><span class="math display">\[E = \frac{\sigma}{\varepsilon_0}\]</span></p>
+<p><strong>Campo en un punto muy cercano a la superficie de un conductor:</strong></p>
+<p><span class="math display">\[E = \frac{\sigma}{\varepsilon_0}\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="potencial-electrico" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> Potencial electrico</h1>
+<div id="energia-potencial-electrica" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> Energia potencial electrica</h2>
+<p><span class="math display">\[U = \frac{kq_1q_2}{r}\]</span></p>
+<p><strong>Energía potencial positiva:</strong> se da cuando tenemos dos cargas de igual signo. En la formula vemos que siempre nos va a quedar positiva.</p>
+<ul>
+<li><p><strong>Reducir distancia entre cargas:</strong> si queremos reducir la distancia hay que “<em>empujar</em>” las cargas hacia adentro, aplicando una fuerza en el mismo sentido en el que quiero que se muevan. Esto quiere decir que, para formar el sistema, hay que realizar un trabajo externo positivo.</p></li>
+<li><p><strong>Aumentar distancia entre cargas:</strong> si queremos aumentar la distancia, hay que sostener las cargas para que no se alejen infinitamente… hay que realizar un trabajo negativo.</p></li>
+</ul>
+<p><strong>Energía potencial negativa:</strong> se da cuando tenemos cargas de diferente signo. En la fórmula vemos que siempre nos va a quedar negativa.</p>
+<ul>
+<li><p><strong>Reducir distancia entre cargas:</strong> sí quiero reducir la distancia entre las cargas habrá que sostenerlas para impedir que se “<em>peguen</em>” y el sistema colapse. Para hacerlo, debemos realizar una fuerza opuesta al desplazamiento, por ende… trabajo negativo. En otras palabras, para formar el sistema, hay que realizar trabajo negativo.</p></li>
+<li><p><strong>Aumentar distancia entre cargas:</strong> si lo que queremos es aumentar la distancia, debemos empujar las cargas en el mismo sentido en el que queremos que se muevan. Por lo tanto, realizamos un trabajo positivo.</p></li>
+</ul>
+<p><strong>Tipos de equilibrio:</strong> Earnshaw nos dice que un sistema compuesto solo por fuerzas electrostáticas nunca puede estar en equilibrio. Sin embargo, este puede ser alcanzado si hay otras fuerzas en el sistema, como la fuerza gravitatoria.</p>
+<p><strong>Estable:</strong> hablamos de un equilibrio estable cuando luego de una perturbación el sistema vuelve a su situación inicial. Parábola feliz, la energia potencial es minima. <strong>Inestable:</strong> si perturbamos el sistema este no vuelve a su posición inicial. Parábola triste, la energia potencial es maxima. <strong>Indiferente:</strong> no sucede nada si se perturba al sistema. No hay equilibrio.</p>
+<p>Para encontrar los puntos de equilibrio estable o inestable, en caso de ser posible, derivamos la energía potencial y la igualamos a cero.</p>
+<p><strong>Energia potencial electrica entre dos cargas puntuales:</strong> En este caso, la energía potencial eléctrica es positiva si ambas cargas tienen igual signo y es negativa si tienen distinto signo.</p>
+<p><span class="math display">\[U = \frac{1}{4\pi \varepsilon_0}\frac{qq_0}{r}\]</span></p>
+<p><strong>Energía potencial eléctrica entre una carga puntual y un conjunto de cargas:</strong></p>
+<p><span class="math display">\[U = \frac{q_0}{4\pi\varepsilon_0}\left(\frac{q_1}{r_1}+ \frac{q_2}{r_2} + \frac{q_3}{r_3} ... \right) = \frac{q_0}{4\pi\varepsilon_0}\sum\limits_{i}\frac{q_i}{r_i}\]</span></p>
+<p><strong>Energía potencial total para un conjunto de cargas:</strong> la energía potencial total para un conjunto de cargas va a ser la suma de la energía potencial de cada par de cargas.</p>
+<p><span class="math display">\[U = \frac{1}{4\pi\varepsilon_0}\sum_{i&lt;j}\frac{q_iq_j}{r_{ij}}\]</span></p>
+</div>
+<div id="trabajo-electrico" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Trabajo electrico</h2>
+<p>El trabajo de una fuerza está dado por la integral de línea</p>
+<p><span class="math display">\[W_{a \to b} = \int\limits_{a}^{b} \overrightarrow F d\overrightarrow r = \int\limits_{a}^{b}F\cos\phi dr\]</span></p>
+<p>Si la fuerza es conservativa entonces podemos expresar el trabajo del campo en términos de la energía potencial</p>
+<p><span class="math display">\[W_{\overrightarrow E} = U_0 - U_f = - \Delta U\]</span></p>
+<p>Se pueden dar dos situaciones</p>
+<ul>
+<li><p><span class="math inline">\(W &gt; 0 \rightarrow \mbox{la energía potencial U disminuye}\)</span>. Esto sucede cuando la carga <span class="math inline">\(q_0\)</span> se mueve en la misma dirección que la fuerza generada por el campo.</p></li>
+<li><p><span class="math inline">\(W &lt; 0 \rightarrow \mbox{la energía potencial U aumenta}\)</span>. Esto sucede cuando la carga <span class="math inline">\(q_0\)</span> se mueve en dirección contraria a la fuerza generada por el campo.</p></li>
+</ul>
+<p>Si nos piden el <em>trabajo necesario</em> para transportar una carga de un lugar a otro entonces no cambiamos el signo, lo que hacemos es</p>
+<p><span class="math display">\[W_{necesario} = U_f - U_0 = \Delta U\]</span></p>
+</div>
+<div id="potencial-electrico-1" class="section level2" number="5.3">
+<h2 number="5.3"><span class="header-section-number">5.3</span> Potencial electrico</h2>
+<p>Nos interesa definir la energía potencial por unidad de carga. El potencial eléctrico es justamente esto, la energía potencial por unidad de carga.</p>
+<p><span class="math display">\[V = \frac{U}{q_0} \rightarrow U = q_0V\]</span></p>
+<p>Por lo tanto tenemos que la diferencia de potencial nos va a decir el trabajo realizado por la fuerza eléctrica cuando una unidad de carga se desplaza de <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>. Llamamos <em>voltaje</em> a la diferencia de potencial entre dos puntos.</p>
+<p><span class="math display">\[\frac{W_{a\to b}}{q_0} = -\frac{\Delta U}{q_0} = - \left( \frac{U_b}{q_0} - \frac{U_a}{q_0} \right) = - (V_b - V_a) = V_a - V_b \]</span></p>
+<p>Por lo tanto, para determinar <span class="math inline">\(V\)</span> a partir de <span class="math inline">\(E\)</span> integramos de la siguiente manera</p>
+<p><span class="math display">\[\frac{W_{a\to b}}{q_0} = -\int\limits_{a}^{b} \overrightarrow E d r = V_b - V_a\]</span></p>
+<p>Como el campo eléctrico es un campo conservativo, la diferencia de potencial (el trabajo realizado por el campo por unidad de carga) no depende de la trayectoria que se realiza entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, solo va a depender del punto inicial y del punto final.</p>
+<p>Haciendo una analogía con el trabajo tenemos que:</p>
+<ul>
+<li><p>Si nos desplazamos en la dirección del campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> entonces V decrece.</p></li>
+<li><p>Si nos desplazamos en contra de la dirección del campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> entonces V aumenta.</p></li>
+</ul>
+<p>Si queremos determinar <span class="math inline">\(\overrightarrow E\)</span> a partir de V hacemos el proceso inverso. Sabemos que V debe ser la función potencial del campo eléctrico por lo tanto</p>
+<p><span class="math display">\[\overrightarrow E = - \nabla V = -\frac{\partial V}{\partial x}\hat{\imath} - \frac{\partial V}{\partial y}\hat{\jmath}  - \frac{\partial V}{\partial z}\hat{k} \qquad  E_r = - \frac{\partial V}{\partial r}\]</span> </p>
+</div>
+<div id="potencial-electrico-para-varias-distribuciones-de-carga" class="section level2" number="5.4">
+<h2 number="5.4"><span class="header-section-number">5.4</span> Potencial electrico para varias distribuciones de carga</h2>
+<p><strong>Diferencia de potencial entre dos puntos:</strong> lo que hacemos es calcular el trabajo por unidad de carga.</p>
+<p><span class="math display">\[-\Delta V = V_a - V_b = - \int\limits_{b}^{a}\overrightarrow E d\overrightarrow r\]</span></p>
+<p><strong>Potencial debido a una carga puntual:</strong></p>
+<p><span class="math display">\[V = \frac{1}{4\pi\varepsilon_0}\frac{q}{r}\]</span></p>
+<p><strong>Potencial debido a un conjunto de cargas puntuales:</strong></p>
+<p>Lo más probable es que tengas que plantear más de un caso. El potencial va a ser una función partida que depende de la distancia <span class="math inline">\(r\)</span> en donde se pondría la nueva carga. Hay que tener en cuenta la posición inicial de cada una de las cargas que nos den.</p>
+<p><span class="math display">\[V = \frac{1}{4\pi\varepsilon_0}\sum_i \frac{q_i}{r_i}\]</span>  <strong>Potencial debido a una distribución continua de cargas:</strong>  <span class="math display">\[V=-\int\limits_{\infty}^{a}\overrightarrow E \cdot d \overrightarrow l  \qquad V = \frac{1}{4\pi\varepsilon_0} \int \frac{dq}{r}\]</span>  <strong>Potencial debido a una esfera cargada volumétricamente</strong>  <span class="math display">\[ V(r) = \left\{ \begin{array}{crl} \frac{\rho}{6\varepsilon_0}\left(3R^2 - r^2\right)  &amp;\mbox{si} &amp; r &lt; R \\ \frac{\rho}{3\varepsilon_0 r} &amp; \mbox{si} &amp; r&gt; R  \end{array} \right. \]</span></p>
+<p>Genéricamente, para una carga cualquiera es 8</p>
+<p><span class="math display">\[V(r) = \left\{ \begin{array}{crl} \frac{Q_{enc}}{8\pi \varepsilon_0} \left( \frac{3r^2-a^2}{r^3} \right) &amp;\mbox{si}&amp; r &lt; R \\ \frac{Q_{enc}}{4\pi\varepsilon_0 r} &amp;\mbox{si} &amp; r &gt; R \end{array} \right.  \qquad \Delta V =\frac{Q_{enc}}{4\pi\varepsilon_0}\left(\frac{1}{a} -\frac{1}{b}\right)\]</span>$</p>
+</div>
+<div id="superficies-equipotenciales" class="section level2" number="5.5">
+<h2 number="5.5"><span class="header-section-number">5.5</span> Superficies equipotenciales</h2>
+<p>Las superficies equipotenciales son superficies tridimensionales en donde la diferencia de potencial V es igual en todos los puntos. Mediante estas superficies podemos representar/visualizar el potencial eléctrico.</p>
+<p><strong>Propiedades:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>El campo eléctrico siempre se dirige hacia las zonas en donde el potencial disminuye.</p></li>
+<li><p>Las líneas de campo siempre son perpendiculares a las líneas equipotenciales.</p></li>
+<li><p>Si una carga <span class="math inline">\(q\)</span> se desplaza de un punto a otro pero siempre sobre una misma superficie equipotencial entonces el trabajo es cero, el potencial no varía.</p></li>
+<li><p>Las superficies equipotenciales con distinto potencial nunca se cruzan.</p></li>
+<li><p>Cuando todas las cargas están en reposo, la superficie de un conductor siempre es una superficie equipotencial y el volumen completo tiene el mismo potencial, el volumen es equipotencial.</p></li>
+</ol>
+</div>
+</div>
+<div id="movimiento-de-partículas" class="section level1" number="6">
+<h1 number="6"><span class="header-section-number">6</span> Movimiento de partículas</h1>
+<p><span class="math display">\[\overrightarrow F = q\overrightarrow E \qquad \overrightarrow a = \frac{q\overrightarrow E}{m} \qquad x = x_0 + v_0t + \frac{q \overrightarrow E t^2 }{2m}\qquad v_f = \overrightarrow v_0 + \frac{tq\overrightarrow E}{m} \qquad  a =\frac{q \overrightarrow E t^2 }{2m} \qquad \overrightarrow v_f^2 =\frac{2q\overrightarrow E }{m}x\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="ley-de-ohm" class="section level1" number="7">
+<h1 number="7"><span class="header-section-number">7</span> Ley de Ohm</h1>
+<p>La ley de Ohm se expresa bajo las siguientes ecuaciones</p>
+<p><span class="math display">\[I = \frac{\Delta V}{R} \qquad  R = \frac{\Delta V}{I } \qquad \Delta V = IR\]</span></p>
+<p><strong>Corriente eléctrica:</strong> llamamos corriente eléctrica a todo movimiento de cargas de una región a otra. Con mayor formalidad… <em>es la carga neta que fluye a través de cierta área por unidad de tiempo</em>.</p>
+<p><span class="math display">\[I = \frac{dQ}{dt} \qquad [\mbox{ I }] = \frac{C}{s} = \mbox{Ampere} \]</span></p>
+<p><strong>Resistencia:</strong> la resistividad <span class="math inline">\(\rho\)</span> de un conductor está dada por <span class="math inline">\(\rho = \frac{1}{\sigma}\)</span> en donde <span class="math inline">\(\sigma\)</span> representa la conductividad de dicho conductor.</p>
+<p>Definimos la resistencia R como</p>
+<p><span class="math display">\[R = \frac{\rho L}{A} \qquad [R] = \frac{Volts}{Ampere} = Ohms = \Omega\]</span></p>
+<div id="circuitos-en-serie" class="section level2" number="7.1">
+<h2 number="7.1"><span class="header-section-number">7.1</span> Circuitos en serie</h2>
+<p><span class="math display">\[\Delta V = \Delta V_1 + \Delta V_2  + ...+ \Delta V_n \qquad I = I_1 = I_2 =...=I_n \qquad R_{eq} = R_1 + R_2 +... +R_n   \]</span> </p>
+</div>
+<div id="circuitos-en-paralelo" class="section level2" number="7.2">
+<h2 number="7.2"><span class="header-section-number">7.2</span> Circuitos en paralelo</h2>
+<p><span class="math display">\[\Delta V = \Delta V_1 =\Delta V_2 =...=\Delta V_n  \qquad I = I_1 + I_2 + ... +I_n \qquad \frac{1}{R_{eq}} = \frac{1}{R_1}+ \frac{1}{R_2}+ ...  + \frac{1}{R_n}\]</span> </p>
+</div>
+<div id="fuerza-electromotriz-fem" class="section level2" number="7.3">
+<h2 number="7.3"><span class="header-section-number">7.3</span> Fuerza electromotriz: fem</h2>
+<p>Puede aparecer también como <em>voltaje</em> o <em>tensión</em>. Es la energía que hace que las cargas vayan desde un punto con menor energía potencial a uno con mayor energía potencial. La fem no es una fuerza, es energía por unidad de carga que realiza una fuente y se mide en volt.</p>
+<p>Las baterías son fuentes de fem, permiten que el circuito tenga corriente constante. Son dispositivos que convierten cualquier tipo de energía en energía potencial eléctrica para transferirla al circuito.</p>
+<p><span class="math display">\[\varepsilon = \frac{dW}{dq} \qquad [\varepsilon] = [V] = \frac{J}{C}\]</span> </p>
+</div>
+<div id="potencia" class="section level2" number="7.4">
+<h2 number="7.4"><span class="header-section-number">7.4</span> Potencia</h2>
+<p>Cuando hablamos de potencia eléctrica hacemos referencia a la cantidad de trabajo o energía que se consume o transporta por unidad de tiempo. Si queremos saber la cantidad de energía/calor total liberado lo único que hay que hacer es multiplicar la potencia por el tiempo durante el cual esta energía se estaba liberando.</p>
+<p><span class="math display">\[\mbox{Potencia} = \frac{\mbox{Trabajo}}{\mbox{Tiempo}} = \frac{W}{t} \qquad [\mbox{P}] = \frac{J}{s} = \mbox{Watts} \]</span> </p>
+<p>La potencia que entrega una bateria esta dada por</p>
+<p><span class="math display">\[\mbox{P}_{bat} = I \cdot \varepsilon\]</span>  La potencia que entrega la batería debe ser igual a la potencia que se disipa en las resistencias.</p>
+<p><span class="math display">\[\mbox{P}_{_{bat}} - \mbox{P}_{dis} =I\varepsilon - I(V_a - V_b) = I\varepsilon - I \Delta V = 0\]</span></p>
+<p>Podemos expresar a la potencia disipada como</p>
+<p><span class="math display">\[\mbox{P}_{dis} = I\Delta V= I^2 \cdot R = \frac{\Delta V ^2}{R}\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="capacitancia" class="section level1" number="8">
+<h1 number="8"><span class="header-section-number">8</span> Capacitancia</h1>
+<p>La capacidad es una propiedad que nos dice que para una misma geometría de un capacitor la relación <span class="math inline">\(C = \frac{Q}{\Delta V}\)</span> siempre va a ser la misma. En otras palabras, la capacitancia de un capacitor es siempre constante porque a medida que aumenta la carga en él, también lo hace de igual manera la diferencia de potencial (carga y <span class="math inline">\(\Delta V\)</span> se relacionan). Cambiar la carga o el voltaje no va a cambiar la capacitancia.</p>
+<p>La única forma de cambiar la capacitancia de un capacitor es es cambiando las propiedades físicas de este. Por ejemplo, cambiar el área de las placas, la distancia entre ellas, agregando o sacando un dieléctrico.</p>
+<p><span class="math display">\[C = \frac{Q}{\Delta V} \qquad  Q = C \Delta V \qquad \Delta V= \frac{Q}{C} \]</span> </p>
+<p>Es muy importante recordar que la carga eléctrica se conserva. Cuando calculamos el <span class="math inline">\(\Delta V\)</span> para un capacitor en un circuito en estado estacionario, este no siempre va a ser necesariamente el voltaje de la batería. Tenemos que calcular el voltaje que existe entre las placas del capacitor para ese circuito.</p>
+<div id="energía-potencial-para-un-capacitor-cargado" class="section level2" number="8.1">
+<h2 number="8.1"><span class="header-section-number">8.1</span> Energía potencial para un capacitor cargado</h2>
+<p>Un capacitor cargado sirve para almacenar energía potencial electrostática. Esta energía existe porque se realizó un trabajo sobre el sistema ya que, para que las placas queden cargadas, fue necesario mover cargas hasta ellas.</p>
+<p>Cuando un capacitor alcanza el equilibrio en un circuito, la energía potencial que almacena esta dada por</p>
+<p><span class="math display">\[U = \frac{1}{2}C(\Delta V)^2 \qquad U = \frac{1}{2}Q \Delta V \qquad U = \frac{1}{2}\frac{Q^2}{C}\]</span> </p>
+</div>
+<div id="capacitores-en-serie" class="section level2" number="8.2">
+<h2 number="8.2"><span class="header-section-number">8.2</span> Capacitores en serie</h2>
+<p><span class="math display">\[\Delta V = \Delta V_1 + \Delta V_2 + ... + \Delta V_n \qquad Q = Q_1 = Q_2 = ... = Q_n \qquad \frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + ...+ \frac{1}{C_n}\]</span> </p>
+</div>
+<div id="capacitores-en-paralelo" class="section level2" number="8.3">
+<h2 number="8.3"><span class="header-section-number">8.3</span> Capacitores en paralelo</h2>
+<p>Cuando conectamos capacitores en paralelo lo que estamos haciendo es crear un capacitor más grande usando varios capacitores más pequeños.</p>
+<p><span class="math display">\[\Delta V = \Delta V_1 = \Delta V_2 = ... = \Delta V_n \qquad Q = Q_1 + Q_2 + ... + Q_n \qquad C_{eq} = C_1 + C_2 + ... + C_n\]</span></p>
+</div>
+<div id="capacitor-de-placas-planas" class="section level2" number="8.4">
+<h2 number="8.4"><span class="header-section-number">8.4</span> Capacitor de placas planas</h2>
+<p><span class="math display">\[\sigma = \frac{Q}{A}  \qquad E = \frac{\sigma}{\varepsilon_0} = \frac{Q}{\varepsilon_0 A} \qquad \Delta V = Ed = \frac{Q}{\varepsilon_0A}d \qquad C = \varepsilon_0 \frac{A}{d}\]</span></p>
+</div>
+<div id="capacitor-cilíndrico" class="section level2" number="8.5">
+<h2 number="8.5"><span class="header-section-number">8.5</span> Capacitor cilíndrico</h2>
+<p><span class="math display">\[V = \frac{\lambda}{2\pi \varepsilon_0} \ln \frac{r_0}{r} \qquad C = \frac{Q}{\Delta V}= \frac{\lambda L}{\frac{\lambda}{2\pi\varepsilon_0}\ln \frac{r_b}{r_a}} = \frac{2\pi\varepsilon_0 L}{\ln \frac{r_b}{r_a}}\]</span></p>
+</div>
+<div id="capacitor-esférico" class="section level2" number="8.6">
+<h2 number="8.6"><span class="header-section-number">8.6</span> Capacitor esférico</h2>
+<p><span class="math display">\[C = \frac{4\pi\varepsilon_0(r_br_a)}{r_b - r_a}\]</span></p>
+</div>
+<div id="capacitores-con-dieléctrico-entre-placas" class="section level2" number="8.7">
+<h2 number="8.7"><span class="header-section-number">8.7</span> Capacitores con dieléctrico entre placas</h2>
+<p>Si introducimos un dieléctrico (vidrio, plástico, aceite) entre las placas de un capacitor, su capacitancia varía. La misma aumenta en un factor <span class="math inline">\(\kappa = \varepsilon_r\)</span> (constante dieléctrica). Esto se debe a que el dieléctrico hace que el campo entre las placas disminuya.</p>
+<ul>
+<li><p>Mantener una distancia pequeña entre las placas sin que estas se toquen, para lograr el fin de almacenar cargas.</p></li>
+<li><p>Disminuir la diferencia de potencial entre las placas, aumentando la capacidad de almacenamiento de cargas y energía. Sí la carga aumenta y disminuye el voltaje… entonces la capacitancia va a aumentar. Entonces… cuando el capacitor alcance la diferencia de potencial de la batería este va a estar más cargado.</p></li>
+<li><p>Aumentar la capacitancia de un capacitor (la capacitancia es mayor bajo la presencia de un dieléctrico que en vacío). El colocar un material no conductor, sin importar cual, siempre va a aumentar la capacitancia.</p></li>
+</ul>
+<p><span class="math display">\[\varepsilon = \varepsilon_0\varepsilon_r = \varepsilon_0 \kappa \qquad \Delta V_f=\frac{\Delta V_0}{\varepsilon_r} \qquad C_f = \varepsilon_r C_0 \qquad E = \frac{E_0}{\varepsilon_r}\]</span></p>
+<p>Si el capacitor es de <em>placas planas</em> la capacitancia nos queda</p>
+<p><span class="math display">\[C = \kappa \frac{\varepsilon_0 A}{d}\]</span> </p>
+</div>
+<div id="medir-nivel-de-combustible" class="section level2" number="8.8">
+<h2 number="8.8"><span class="header-section-number">8.8</span> Medir nivel de combustible</h2>
+<p>Cuando queremos medir el nivel de combustible en un tanque lo que hacemos es introducir un capacitor en él. Cuando hay combustible, una parte del capacitor queda con dieléctrico el cual produce el mismo efecto que al tener dos capacitores en paralelo.</p>
+<p>Entonces para medir el nivel de combustible en un tanque usamos capacitores en <strong>paralelo</strong>. Como bien sabemos, cuando dos o más capacitores están en paralelo todos tienen la misma diferencia de potencial y por lo tanto el mismo campo eléctrico entre sus placas.</p>
+<p>En otras palabras el <span class="math inline">\(\Delta V\)</span> y el <span class="math inline">\(E\)</span> que hay en la zona del capacitor sin dieléctrico es igual que en la zona en con dieléctrico.</p>
+<p>Se usan las siguientes fórmulas.</p>
+<p><span class="math display">\[C_0 = \varepsilon_0 \frac{wL}{d} \qquad C = C_0[(\varepsilon_r -1)x +1] \qquad x = \frac{h}{L} \quad 0&lt; x &lt; 1\]</span></p>
+<ul>
+<li><p>Si el tanque está vacío tenemos que <span class="math inline">\(x =0\)</span> y <span class="math inline">\(C = C_0\)</span>.</p></li>
+<li><p>Si el tanque está lleno <span class="math inline">\(x = 1\)</span> y <span class="math inline">\(C = \varepsilon_r C_0\)</span>.</p></li>
+</ul>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="kirchhoff" class="section level1" number="9">
+<h1 number="9"><span class="header-section-number">9</span> Kirchhoff</h1>
+<div id="ley-de-nodos" class="section level2" number="9.1">
+<h2 number="9.1"><span class="header-section-number">9.1</span> Ley de nodos</h2>
+<p><span class="math display">\[\sum i_{entran} = 0\]</span> </p>
+</div>
+<div id="ley-de-mallas" class="section level2" number="9.2">
+<h2 number="9.2"><span class="header-section-number">9.2</span> Ley de mallas</h2>
+<p><span class="math display">\[\sum V_{aumento} - \sum V_{caída} = 0 \rightarrow \sum \Delta V_i = 0\]</span> </p>
+</div>
+<div id="sistema-con-capacitor" class="section level2" number="9.3">
+<h2 number="9.3"><span class="header-section-number">9.3</span> Sistema con capacitor</h2>
+<p>Pones la <span class="math inline">\(\Delta V\)</span> del capacitor como <span class="math inline">\(\frac{q(t)}{C}\)</span> y tenes en cuenta que la corriente de la malla que pasa por donde esta el capacitor es <span class="math inline">\(\frac{dq}{dt} = i(t)\)</span>, lo cual nos va a permitir resolver las ecuaciones. </p>
+</div>
+<div id="pasos" class="section level2" number="9.4">
+<h2 number="9.4"><span class="header-section-number">9.4</span> Pasos</h2>
+<ol style="list-style-type: decimal">
+<li><p>Identificar los nodos y las ramas. N va a ser la cantidad de nodos y r la cantidad de ramas.</p></li>
+<li><p>Indicar los sentidos supuestos de las intensidades de corriente I.</p></li>
+<li><p>Plantear <span class="math inline">\(N-1\)</span> ecuaciones de nodos. Hay que eliminar una para poder tener un sistema LI y no uno LD.</p></li>
+<li><p>Elegir <span class="math inline">\(r-(N-1)\)</span> mallas para completar las <span class="math inline">\(r\)</span> ecuaciones necesarias para resolver el sistema. Para las mallas elegidas es necesario adoptar un sentido de circulación.</p></li>
+<li><p>Formar un sistema lineal de r ecuaciones con r incognitas.</p></li>
+</ol>
+</div>
+<div id="signos-y-cosas-a-tener-en-cuenta" class="section level2" number="9.5">
+<h2 number="9.5"><span class="header-section-number">9.5</span> Signos y cosas a tener en cuenta:</h2>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="circuitos-rc" class="section level1" number="10">
+<h1 number="10"><span class="header-section-number">10</span> Circuitos RC</h1>
+<div id="capacitor-cargándose-casos-generales" class="section level2" number="10.1">
+<h2 number="10.1"><span class="header-section-number">10.1</span> Capacitor cargándose: casos generales</h2>
+<p><span class="math display">\[Q(t) = C\varepsilon + \left(q_0 - C\varepsilon\right)e^{-\frac{t}{RC}} \qquad I(t) = \frac{\left(q_0 - C\varepsilon\right)}{RC}e^{-\frac{t}{RC}} \qquad V(t) = \frac{C\varepsilon + \left(q_0 - C\varepsilon \right)e^{-\frac{t}{RC}}}{C}\]</span> </p>
+</div>
+<div id="capacitor-cargándose-carga-inicial-igual-a-cero" class="section level2" number="10.2">
+<h2 number="10.2"><span class="header-section-number">10.2</span> Capacitor cargándose: carga inicial igual a cero</h2>
+<p><span class="math display">\[Q(t) = C\varepsilon \left(1-e^{-\frac{t}{RC}}\right) \qquad I(t) = \frac{\varepsilon}{R}e^{-\frac{t}{RC}} \qquad V(t) = \varepsilon \left(1 - e^{-\frac{t}{RC}}\right)\]</span></p>
+<p>Definimos el tiempo característico como el tiempo que tarda el capacitor para completar el <span class="math inline">\(63.2\%\)</span> de su carga total.</p>
+<p><span class="math display">\[\tau = RC\]</span></p>
+</div>
+<div id="capacitor-en-descarga" class="section level2" number="10.3">
+<h2 number="10.3"><span class="header-section-number">10.3</span> Capacitor en descarga</h2>
+<p>Ahora la corriente, en vez de “<em>entrar</em>” al capacitor, va a salir de él. No es indispensable… pero el signo del sentido que tiene la corriente de un capacitor en descarga es opuesto al signo que tenía cuando se estaba cargando. Si dijimos que cuando la corriente sale del capacitor el signo es <span class="math inline">\(+\)</span>, entonces basta con poner un <span class="math inline">\(-\)</span> adelanto de la formula de intensidad de corriente.</p>
+<p><span class="math display">\[q = Q_0e^{-\frac{t}{RC}} \qquad i = \frac{dq}{dt}=\frac{Q_0}{RC}e^{\frac{-t}{RC}} = I_0e^{-\frac{t}{RC}} \qquad V(t) = \frac{q(t)}{C} = V_0e^{-\frac{t}{RC}}\]</span> </p>
+</div>
+<div id="carga-máxima-del-capacitor-y-trabajo-de-la-batería" class="section level2" number="10.4">
+<h2 number="10.4"><span class="header-section-number">10.4</span> Carga máxima del capacitor y trabajo de la batería</h2>
+<p><span class="math display">\[Q_{\mbox{max}}=C\varepsilon \qquad W_{\mbox{bat}} = \varepsilon^2C\left(1-e^{-\frac{t}{RC}}\right)\]</span></p>
+</div>
+<div id="energíacalor-disipado-en-las-resistencias" class="section level2" number="10.5">
+<h2 number="10.5"><span class="header-section-number">10.5</span> Energía/calor disipado en las resistencias</h2>
+<p>Es la integral de la potencia disipada. Esto es porque la potencia no es constante, depende del tiempo.</p>
+<p><span class="math display">\[P_{dis} = \frac{dU_R}{dt} = i^2(t)R = \int\limits_{U_R(t_0)}^{U_R(t_f)}dU_R(t)=\int\limits_{t_0}^{t_f}i^2(t)Rdt\]</span></p>
+<p>Si queres calcular la energía disipada en una resistencia en particular tenes que dejar RC con la resistencia equivalente y cambias solo el R que multiplica a <span class="math inline">\(i^2(t)\)</span> en la integral.</p>
+</div>
+<div id="potencia-suministrada-por-la-batería" class="section level2" number="10.6">
+<h2 number="10.6"><span class="header-section-number">10.6</span> Potencia suministrada por la batería</h2>
+<p>La mitad de la energía total entregada por la batería se almacena en el capacitor y la otra mitad se disipa en el resistor. La potencia <span class="math inline">\(\varepsilon i\)</span> suministrada por la batería, una parte <span class="math inline">\(i^2R\)</span> se disipa en el resistor y otra parte <span class="math inline">\(iq/C\)</span> se almacena en el capacitor.</p>
+<p><span class="math display">\[P = \varepsilon i = i^2 R + \frac{iq}{C}\]</span></p>
+<p>Si la corriente entra por el borne positivo entonces vamos a decir que la batería absorbe potencia, lo cual puede suceder si un capacitor tiene una mayor diferencia de potencial que la que hay en la batería. Si sale por el borne positivo… entonces decimos que libera.</p>
+</div>
+<div id="trabajo-que-hace-la-batería" class="section level2" number="10.7">
+<h2 number="10.7"><span class="header-section-number">10.7</span> Trabajo que hace la batería</h2>
+<p>El primer término representa la energía disipada en la resistencia y el segundo término la energía almacenada en el capacitor para un determinado tiempo (el q es en este tiempo). La energía proporcionada por la fem es igual al trabajo que esta hace y lo definimos como <span class="math inline">\(q\varepsilon\)</span>.</p>
+<p><span class="math display">\[W_{bat} = q\varepsilon = \int\limits_{t_0}^{t_f} i^2(t)Rdt + \frac{q^2}{2C_1}\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="magnetismo" class="section level1" number="11">
+<h1 number="11"><span class="header-section-number">11</span> Magnetismo</h1>
+<div id="campo-magnético" class="section level2" number="11.1">
+<h2 number="11.1"><span class="header-section-number">11.1</span> Campo magnético</h2>
+<p>Cuando hablamos de campo magnético tenemos que tener en cuenta dos propiedades</p>
+<ol style="list-style-type: decimal">
+<li><p>Una carga o una corriente móvil crea un campo magnético en el espacio circundante (además de su campo magnético).</p></li>
+<li><p>El campo magnético ejerce una fuerza F sobre cualquier otra carga o corriente en movimiento presente en el campo.</p></li>
+</ol>
+</div>
+<div id="fuerzas-magnéticas-sobre-cargas-móviles" class="section level2" number="11.2">
+<h2 number="11.2"><span class="header-section-number">11.2</span> Fuerzas magnéticas sobre cargas móviles</h2>
+<p>La fuerza magnética ejercida sobre una carga en movimiento tiene cuatro características muy importantes:</p>
+<ol style="list-style-type: decimal">
+<li><p>La magnitud es proporcional a la magnitud de la carga. Cuanto mayor sea la magnitud de la carga, mayor será la fuerza sobre ella.</p></li>
+<li><p>La magnitud es proporcional a la magnitud o intensidad del campo. Si duplicamos la magnitud del campo, sin cambiar la carga o la velocidad de esta, también se duplica la fuerza.</p></li>
+<li><p>La fuerza magnética depende de la velocidad de la partícula. Esto se diferencia con la fuerza del campo eléctrico, la cual no depende de sí la carga se mueve o no. Una partícula cargada en reposo… no experimenta fuerza magnética.</p></li>
+<li><p>La fuerza F no tiene la misma dirección que el campo magnético B. Más bien, F es perpendicular a B y a la velocidad v. Vamos a tener que usar un producto vectorial para obtener F. Por lo que sí v y B son paralelas… entonces la fuerza va a ser cero. La dirección de F es siempre perpendicular al plano que contiene a <span class="math inline">\(v\)</span> y B. La magnitud de F está dada por</p></li>
+</ol>
+<p><span class="math display">\[F = \vert q\vert v_\perp B = \vert q \vert vB_\perp = \vert q \vert v B \sin \phi\]</span></p>
+<p>Vemos que el módulo de la fuerza es máxima cuando <span class="math inline">\(v\)</span> y B son perpendiculares.</p>
+</div>
+<div id="dirección-de-la-fuerza-magnética-sobre-cargas-móviles" class="section level2" number="11.3">
+<h2 number="11.3"><span class="header-section-number">11.3</span> Dirección de la fuerza magnética sobre cargas móviles</h2>
+<p>La fuerza magnética sobre una partícula con carga en movimiento está dada por</p>
+<p><span class="math display">\[\overrightarrow F = q \overrightarrow v \times \overrightarrow B \qquad [\mbox{B}] = \frac{1N\cdot s}{C\cdot m} = \frac{N}{A\cdot m} = \mbox{Tesla} \rightarrow \mbox{Gauss} = 10^{-4} \mbox{T}\]</span></p>
+<p>Para dos cargas de signos distintos que se mueven con igual velocidad en el mismo campo magnético la fuerza sobre ellas va a ser igual en magnitud pero dirección opuesta.</p>
+</div>
+<div id="fuerza-de-lorentz-fuerza-sobre-una-partícula-cargada-en-presencia-de-e-y-b" class="section level2" number="11.4">
+<h2 number="11.4"><span class="header-section-number">11.4</span> Fuerza de Lorentz: fuerza sobre una partícula cargada en presencia de E y B</h2>
+<p>La fuerza resultante sobre la partículas es la suma vectorial de las fuerzas eléctrica y magnética.</p>
+<p><span class="math display">\[\overrightarrow F = q(\overrightarrow E + \overrightarrow v \times \overrightarrow B)\]</span></p>
+</div>
+<div id="líneas-de-campo-magnético" class="section level2" number="11.5">
+<h2 number="11.5"><span class="header-section-number">11.5</span> Líneas de campo magnético:</h2>
+<ul>
+<li><p>En cada punto, la línea de campo es tangente al vector campo magnético B.</p></li>
+<li><p>Sí las líneas de campo están muy juntas entonces la magnitud del campo es muy grande, lo contrario pasa sí están separadas.</p></li>
+<li><p>Las líneas de campo magnético nunca se cruzan ya que la dirección de B en cada punto es única.</p></li>
+<li><p>En cada punto las líneas apuntan en la misma dirección en que apuntaría una brújula. Por lo tanto las líneas se alejan de los polos N hacia los polos S.</p></li>
+</ul>
+</div>
+<div id="flujo-magnético" class="section level2" number="11.6">
+<h2 number="11.6"><span class="header-section-number">11.6</span> Flujo magnético</h2>
+<p><span class="math display">\[\Phi_B = \int B_\perp dS = \int B \cos \phi dS = \int \overrightarrow B \cdot dS\]</span></p>
+<p>La unidad de flujo magnético es el <em>Weber</em>, <span class="math inline">\(1 \mbox{Wb} = 1 \mbox{T} \cdot m^2\)</span>.</p>
+</div>
+<div id="ley-de-gauss-del-magnetismo" class="section level2" number="11.7">
+<h2 number="11.7"><span class="header-section-number">11.7</span> Ley de Gauss del magnetismo</h2>
+<p>El flujo magnético total a través de una superficie es siempre igual a cero. Esto se debe a que en la naturaleza no existen los monopolos magnéticos. Esto significa que todas las líneas de campo que salen, vuelven a entrar.</p>
+<p><span class="math display">\[\oint \overrightarrow B d \overrightarrow S = 0\]</span></p>
+</div>
+<div id="fuerza-magnética-sobre-un-conductor" class="section level2" number="11.8">
+<h2 number="11.8"><span class="header-section-number">11.8</span> Fuerza magnética sobre un conductor</h2>
+<p><strong>Cable recto:</strong></p>
+<p><span class="math display">\[\overrightarrow F = I \overrightarrow l \times \overrightarrow B\]</span>  <strong>Cable no recto:</strong> Buscamos la fuerza magnética sobre una sección infinitesimal de alambre.</p>
+<p><span class="math display">\[d \overrightarrow F = I d \overrightarrow l \times \overrightarrow B\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="aplicaciones-del-magnetismo" class="section level1" number="12">
+<h1 number="12"><span class="header-section-number">12</span> Aplicaciones del magnetismo</h1>
+<div id="tubos-de-rayos-catódicos" class="section level2" number="12.1">
+<h2 number="12.1"><span class="header-section-number">12.1</span> Tubos de rayos catódicos</h2>
+<p>Esta experiencia nos dice que si conocemos el valor del campo eléctrico E y el del campo magnético B entonces podemos averiguar <span class="math inline">\(v\)</span> y el valor del potencial <span class="math inline">\(V\)</span>, lo cual me va a permitir calcular la relación entre la carga y la masa del electrón, <span class="math inline">\(\frac{e}{m}\)</span>.</p>
+<p><span class="math display">\[\frac{1}{2}mv^2 = eV \rightarrow v = \sqrt{\frac{2eV}{m}} \rightarrow \frac{E}{B} \sqrt{\frac{2eV}{m}} \rightarrow \frac{e}{m} = \frac{E^2}{2VB^2}\]</span></p>
+<p><span class="math display">\[F = \vert q\vert vB = m\frac{v^2}{r}\]</span></p>
+</div>
+<div id="selector-de-velocidades" class="section level2" number="12.2">
+<h2 number="12.2"><span class="header-section-number">12.2</span> Selector de velocidades</h2>
+<p>La fuerza magnética se cancela con la eléctrica y se cumple que</p>
+<p><span class="math display">\[v = \frac{E}{B}\]</span></p>
+</div>
+<div id="espectrómetro-de-masas" class="section level2" number="12.3">
+<h2 number="12.3"><span class="header-section-number">12.3</span> Espectrómetro de masas</h2>
+<p><span class="math display">\[F = \vert q \vert vB = m\frac{v^2}{r} \qquad r = \frac{mv}{\vert q \vert B} \qquad\]</span></p>
+<p>Recordando algunos conceptos de física I</p>
+<p><span class="math display">\[\omega = \frac{v}{r} = \frac{qB}{m} \qquad f = \frac{\omega}{2\pi} = \frac{qB}{2\pi m } \qquad T = \frac{1}{f} = \frac{2\pi m }{qB}\]</span></p>
+</div>
+<div id="ciclotrón" class="section level2" number="12.4">
+<h2 number="12.4"><span class="header-section-number">12.4</span> Ciclotrón</h2>
+<p>Un ciclotrón es básicamente un acelerador de partículas. Cuando la fuerza del campo magnético es perpendicular a la velocidad se produce un MCU.</p>
+<p><span class="math display">\[q\Delta V = \frac{1}{2}mv_{i}^{2} - \frac{1}{2}mv_{i-1}^2 \qquad r_i = \frac{mv_i}{qB}\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="fuentes-de-campo-magnético" class="section level1" number="13">
+<h1 number="13"><span class="header-section-number">13</span> Fuentes de campo magnético</h1>
+<div id="campo-magnético-de-una-carga-en-movimiento" class="section level2" number="13.1">
+<h2 number="13.1"><span class="header-section-number">13.1</span> Campo magnético de una carga en movimiento</h2>
+<p>La magnitud de <span class="math inline">\(\overrightarrow B\)</span> es proporcional a <span class="math inline">\(\vert q \vert\)</span> y a <span class="math inline">\(\frac{1}{r^2}\)</span>. La dirección es perpendicular al plano que contiene la recta que une el punto fuente con el punto campo y al vector velocidad <span class="math inline">\(\overrightarrow v\)</span>.</p>
+<p><span class="math display">\[B = \frac{\mu_0 }{4\pi} \frac{\vert q \vert v \sin \phi}{r^2} \qquad \overrightarrow B = \frac{\mu_0}{4\pi} \frac{q \overrightarrow v \times \hat{r}}{r^2}\]</span></p>
+</div>
+<div id="ley-de-biot-savart" class="section level2" number="13.2">
+<h2 number="13.2"><span class="header-section-number">13.2</span> Ley de Biot-Savart</h2>
+<p>Mediante esta ley podemos obtener el campo magnético total <span class="math inline">\(\overrightarrow B\)</span> en cualquier punto del espacio debido a la corriente en un circuito.</p>
+<p><span class="math display">\[d\overrightarrow B = \frac{\mu_0}{4\pi} \frac{Id\overrightarrow l \times \hat{r}}{r^2} \rightarrow \overrightarrow B = \frac{m_0}{4\pi} \int \frac{Id \overrightarrow l \times \hat{r}}{r^2}\]</span></p>
+<p>La constante <span class="math inline">\(\mu_0\)</span> es llamada como <em>permeabilidad del medio en vacio</em>. El versor <span class="math inline">\(\hat{r}\)</span> representa la dirección que desde el punto fuente al punto campo y la dirección de la corriente <span class="math inline">\(I\)</span> nos la da el vector <span class="math inline">\(\overrightarrow l\)</span>.</p>
+</div>
+<div id="campos-magnéticos" class="section level2" number="13.3">
+<h2 number="13.3"><span class="header-section-number">13.3</span> Campos magnéticos</h2>
+<p><strong>Espira circular de corriente: </strong>  El campo magnético sobre el eje de una espira circular es</p>
+<p><span class="math display">\[B_x = \frac{\mu_0 I R^2}{2\left(x^2+R^2\right)^{3/2}}\]</span></p>
+<p><strong>Eje de una bobina: </strong>  Si tenemos una bobina de N espiras entonces tenemos que el campo magnético sobre el eje de las N espiras circulares, calculado con la ley de Biot-Savart va a ser</p>
+<p><span class="math display">\[B_x = \frac{\mu_0NIR^2}{2\left(x^2 + R^2\right)^{3/2}} \qquad B_{max} = \frac{\mu_0NI}{2a}\]</span></p>
+<p><strong>Eje de un solenoide cilíndrico recto:</strong> si la longitud es mucho mayor que el radio entonces</p>
+<p><span class="math display">\[\overrightarrow B = \frac{\mu_0NI}{L} \hat{k}\]</span> <strong>En un extremo de un solenoide:</strong></p>
+<p><span class="math display">\[\overrightarrow B =\frac{\mu_0 NI}{2L} \hat{k}\]</span> ## Fuerza magnética: conductores paralelos  <span class="math display">\[\frac{F}{L} = \frac{\mu_0I_1 I_2}{2\pi r}\]</span></p>
+</div>
+<div id="ley-de-ampere" class="section level2" number="13.4">
+<h2 number="13.4"><span class="header-section-number">13.4</span> Ley de Ampere</h2>
+<p>Nos dice que toda corriente genera a su alrededor un campo magnético. Esta ley nos va a permitir obtener la expresión de los campos magnéticos generados por distribuciones de corriente con un alto grado de simetría. La circulación del campo magnético sobre una curva cerrada vale <span class="math inline">\(\mu_0 I_{enc}\)</span>, que es corriente concatenada por la curva. Lo que hacemos es una integral de línea en una curva cerrada, alrededor del conductor.</p>
+<p><span class="math display">\[\oint \overrightarrow B \cdot d \overrightarrow l =\mu_0 I_{enc}\]</span></p>
+<p>Para conocer la dirección del campo magnético usamos la regla de la mano derecha (apuntas tu dedo gordo en la misma dirección que la corriente y después giras la mano). El campo magnético siempre va a ser tangente a la línea de inducción.</p>
+</div>
+<div id="campo-magnético-conductor-recto" class="section level2" number="13.5">
+<h2 number="13.5"><span class="header-section-number">13.5</span> Campo magnético: conductor recto</h2>
+<p><span class="math display">\[B = \frac{\mu_0I}{4\pi} \frac{2a}{x\sqrt{x^2+a^2}}\]</span></p>
+<p>Si <span class="math inline">\(a\)</span> tiende a infinito entonces queda</p>
+<p><span class="math display">\[B = \frac{\mu_0I}{2\pi r}\]</span></p>
+</div>
+<div id="campo-magnético-solenoidebobina" class="section level2" number="13.6">
+<h2 number="13.6"><span class="header-section-number">13.6</span> Campo magnético: solenoide/bobina</h2>
+<p>Si el solenoide es infinito entonces tenemos que</p>
+<p><span class="math display">\[B = \frac{\mu_0NI(t)}{L}\]</span></p>
+</div>
+<div id="campo-magnético-bobina-toroidal" class="section level2" number="13.7">
+<h2 number="13.7"><span class="header-section-number">13.7</span> Campo magnético: bobina toroidal</h2>
+<p><span class="math display">\[B = \frac{\mu_0NI}{2\pi r} \qquad a \leq r \leq b\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="induccion-electromagnetica" class="section level1" number="14">
+<h1 number="14"><span class="header-section-number">14</span> Induccion electromagnetica</h1>
+<div id="ley-de-faraday" class="section level2" number="14.1">
+<h2 number="14.1"><span class="header-section-number">14.1</span> Ley de Faraday</h2>
+<p>Esta ley nos dice que un campo magnético puede producir corriente eléctrica, inducir una fem.</p>
+<ul>
+<li><p>Al mover un imán cerca de una bobina se produce corriente en dicha bobina. Lo que nos importa es el movimiento relativo entre estos dos objetos, da lo mismo si se mueve el imán o la bobina.</p></li>
+<li><p>Al establecer una corriente en una bobina o al interrumpirla se produce otra corriente en otra bobina ubicada en las cercanías de la primera, sin que haya contacto entre ambas.</p></li>
+<li><p>Al mover un conductor a través de un campo magnético, de manera tal que vaya cortando líneas de campo, se produce una fem inducida en este conductor. Si este conductor es parte de un circuito eléctrico… se creará corriente en dicho circuito.</p></li>
+</ul>
+<p>Todo esto lo podemos generalizar con la expresión de la ley de Faraday de la inducción electromagnética. La fem inducida va a estar cuando haya una variación en el flujo magnético.</p>
+<p><span class="math display">\[\varepsilon_{ind} = - \frac{d \Phi_B}{dt}\]</span></p>
+<p>El flujo de campo magnético a través de una superficie S abierta cuyo contorno es un conductor, es igual al número de líneas de campo que atraviesa a dicha superficie.</p>
+<p><span class="math display">\[\Phi_B = \int\limits_s \overrightarrow B \cdot d \overrightarrow S = \int\limits_s B\cos \phi dS\]</span></p>
+<p>El módulo del flujo de campo magnético puede variar a través del tiempo por tres motivos</p>
+<p>Para una bobina de N espiras tenemos</p>
+<p><span class="math display">\[\varepsilon = -N \frac{d\Phi_B}{dt}\]</span></p>
+</div>
+<div id="ley-de-lenz" class="section level2" number="14.2">
+<h2 number="14.2"><span class="header-section-number">14.2</span> Ley de Lenz</h2>
+<p>Sirve para deducir el sentido de circulación de la corriente en un circuito que se encuentra bajo los efectos de un campo magnético y vemos que el flujo del campo magnético cambia a través del tiempo.</p>
+<p>La naturaleza se opone al cambio del flujo magnético. Para oponerse, crea una corriente con sentido tal que el campo magnético generado por esta corriente se oponga al cambio del flujo. El sentido de la corriente siempre va en contra del cambio en el flujo. Si el flujo aumenta, la corriente inducida tiene que ir contra ese aumento, generando un campo magnético que contrarreste ese aumento, se deben generar líneas de campo magnético contrarias a las que ya existen.</p>
+<p>Para decidir el signo que va a tener una corriente yo uso la fuerza de Lorentz. En una parte del conductor se van a inducir cargas positivas y en la otra cargas negativas, esto debido a la velocidad y al campo magnético. Estas cargas crean una diferencia de potencial que da lugar a una corriente que circula desde la parte positiva a la negativa. Si la corriente va en sentido horario entonces ponemos signo <span class="math inline">\(-\)</span>, si va en sentido antihorario pones <span class="math inline">\(+\)</span>.</p>
+<p>Otra forma de pensarlo es pensando que la fuerza de Laplace tiene que ir en contra de la velocidad. De ahí podes ver la dirección de la corriente o bien, de <span class="math inline">\(\overrightarrow L\)</span> para ver el signo del flujo magnético <span class="math inline">\(\Phi_B\)</span>.</p>
+</div>
+<div id="fuerza-de-laplace" class="section level2" number="14.3">
+<h2 number="14.3"><span class="header-section-number">14.3</span> Fuerza de Laplace</h2>
+<p>Sí un cable por el que circula corriente está inmerso en un campo magnético, este campo ejerce una fuerza sobre el cable y esta es perpendicular tanto al cable como al vector campo. La fuerza de Laplace siempre va a ir en contra de la velocidad que mueve la barra. Tener en cuenta esto sirve para ver qué signo le vamos a poner a L.</p>
+<p><span class="math display">\[\overrightarrow F = I \overrightarrow L \times \overrightarrow B\]</span></p>
+<p>Cuando nos piden la fuerza necesaria para hacer que una varilla se siga moviendo con velocidad constante, planteamos lo siguiente</p>
+<p><span class="math display">\[\sum F = F^* + F_{Laplace} = 0 \rightarrow F^* = -F_{Laplace} \qquad P_{F^*} = \frac{W}{t} = \frac{Fd}{t} = Fv\]</span></p>
+<p>La fuerza necesaria es siempre igual y contraria a la fuerza generada por el campo eléctrico. Si nos piden la <strong>potencia desarrollada</strong> <span class="math inline">\(P\)</span> para <span class="math inline">\(F^*\)</span> aplicamos la definición de potencia.</p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="ecuaciones-de-maxwell-situaciones-temporales" class="section level1" number="15">
+<h1 number="15"><span class="header-section-number">15</span> Ecuaciones de Maxwell: situaciones temporales</h1>
+<p>Mostramos las ecuaciones en su forma integral y en su forma diferencial.</p>
+<div id="ley-de-gauss-1" class="section level2" number="15.1">
+<h2 number="15.1"><span class="header-section-number">15.1</span> Ley de Gauss</h2>
+<p>En este caso <span class="math inline">\(\rho\)</span> representa la densidad volumétrica de carga. Recordamos, por el teorema de la divergencia, que <span class="math inline">\(\oiint_S \overrightarrow E \cdot d\overrightarrow S = \iiint_V \overrightarrow \nabla\cdot \overrightarrow E dV\)</span>.</p>
+<p><span class="math display">\[\oiint_S \overrightarrow E \cdot \overrightarrow d\overrightarrow  S = \frac{Q_{enc}}{\varepsilon_0} \qquad \overrightarrow\nabla \cdot \overrightarrow E = \frac{\rho}{\varepsilon_0} \]</span></p>
+</div>
+<div id="ley-de-gauss-magnetismo" class="section level2" number="15.2">
+<h2 number="15.2"><span class="header-section-number">15.2</span> Ley de Gauss: magnetismo</h2>
+<p>Las líneas de campo magnético son cerradas, no existen fuentes ni sumideros de líneas de campo. Debido a esto, el flujo de campo magnético a través de cualquier superficie cerrada siempre va a ser igual a cero. Decimos que <span class="math inline">\(\overrightarrow B\)</span> es un campo incomprensible, totalmente rotacional.</p>
+<p><span class="math display">\[\oiint_S \overrightarrow B\cdot d\overrightarrow S = 0 \qquad \overrightarrow \nabla \cdot \overrightarrow B  = 0\]</span></p>
+</div>
+<div id="ley-de-ampere-1" class="section level2" number="15.3">
+<h2 number="15.3"><span class="header-section-number">15.3</span> Ley de Ampere</h2>
+<p>Un campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> variable en el tiempo induce campo magnético también variable en el tiempo. Cuando no hay variación de campo eléctrico (magnetostática) entonces decimos que la circulación de un campo magnético a través de una curva cerrada tiene que ser igual a la permeabilidad magnética <span class="math inline">\(\mu_0\)</span> por la corriente concatenada.</p>
+<p><span class="math display">\[\oint \overrightarrow B \cdot d \overrightarrow l = \mu_0 \varepsilon_0 \frac{\partial \Phi_E}{\partial t}+ \mu_0 i_{enc} \qquad \overrightarrow \nabla \times \overrightarrow B = \mu_0\overrightarrow J + \mu_0 \varepsilon_0 \frac{\partial \overrightarrow E}{\partial t}\]</span></p>
+</div>
+<div id="ley-de-faraday-1" class="section level2" number="15.4">
+<h2 number="15.4"><span class="header-section-number">15.4</span> Ley de Faraday</h2>
+<p>Cuando a través del tiempo hay un cambio en el flujo magnético <span class="math inline">\(\Phi_B\)</span> se induce un campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> el cual, al contrario de lo que sucede en las situaciones electrostáticas, no es conservativo.</p>
+<p>En otras palabras, cuando el campo eléctrico <span class="math inline">\(\overrightarrow E\)</span> es inducido por la variación del campo magnético a través del tiempo entonces su rotor <span class="math inline">\(\mbox{rot} \times \overrightarrow E \neq 0\)</span>.</p>
+<p><span class="math display">\[\oint \overrightarrow E \cdot d\overrightarrow l = -\frac{\partial \Phi_B}{\partial t} \qquad \overrightarrow \nabla \times \overrightarrow E = -\frac{\partial \overrightarrow B}{\partial t}\]</span></p>
+<p>Vemos que, cuando no hay variación del flujo magnético en el tiempo, entonces el campo eléctrico sí es conservativo ya que en estos casos se cumple que su rotor <span class="math inline">\(\mbox{rot} \times \overrightarrow E = 0\)</span>.</p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="aplicaciones-del-electromagnetismo" class="section level1" number="16">
+<h1 number="16"><span class="header-section-number">16</span> Aplicaciones del electromagnetismo</h1>
+<div id="transformador" class="section level2" number="16.1">
+<h2 number="16.1"><span class="header-section-number">16.1</span> Transformador</h2>
+<p>El transformador tiene la función de cambiar, disminuir o aumentar el potencial de una corriente. El mismo se compone por dos <strong>bobinas</strong> (primaria y secundaria) que están aisladas entre sí (no están conectadas eléctricamente), un <strong>núcleo</strong> de material ferromagnético que sirve para conducir la mayor cantidad de flujo magnético posible.</p>
+<p>Por la bobina primaria circula una corriente alterna, que varía en función del tiempo. Debido a que la corriente varía, se produce un campo magnético que varía de igual manera. Este campo magnético fluye por el núcleo y llega hasta la bobina secundaria. Al atravesar esta bobina, se induce una fem (por la ley de faraday) y esta puede ser, según el número de espiras, mayor o menor que el voltaje de la bobina primaria.</p>
+<p>En el núcleo de un Transformador NO fluye corriente. Fluyen una I1 por la bobina primaria y una I2 (la inducida) por la bobina secundaria. Lo único que fluye por el núcleo de un Transformador es campo magnético</p>
+<p><strong>¿Por qué hay ddp V2 en la bobina secundaria a pesar de que no está conectada eléctricamente con el bobinado primario? ¿Qué ley de la física permite explicar su funcionamiento?</strong></p>
+<p>Esto es por la inducción electromagnética. Se explica con la ley de Faraday la cual nos dice que la variación en el flujo del campo magnético a través del tiempo (lo cual se produce en el transformador ya que la corriente que se utiliza es una corriente alterna), induce una fem sobre la bobina secundaria. </p>
+<p><strong>¿Qué relación matemática hay entre V2 y V1? ¿Cómo se justifica dicha relación?</strong></p>
+<p>La fórmula fundamental del transformador es</p>
+<p><span class="math display">\[\frac{V_s}{V_p} = \frac{N_s}{N_p}\]</span>  <strong>¿Cuál es la utilidad del transformador?</strong></p>
+<p>Cambiar el potencial. Esto ayuda mucho para reducir la energía disipada en procesos industriales o bien, al transportar corriente. Entonces, los transformadores se usan mucho para bajar la corriente y a su vez, la energía que se disipa en un camino. </p>
+<p><strong>¿Por qué la fuente de tensión en el primario debe ser de alterna? ¿Qué pasaría si fuera continua? </strong></p>
+<p>Porque de otra forma no se produciría una variación en el flujo magnético en función del tiempo, lo cual no inducirá una tensión en la bobina secundaria ya que, según la ley de Faraday, para inducir una fem el flujo magnético debe variar. </p>
+<p><strong>Otras fórmulas del transformador:</strong> <span class="math display">\[\Phi_{p(t)} = N_pB_{(t)}S \qquad \Phi_{s(t)} = N_s B_{(t)}S\]</span></p>
+<p>Tenemos entonces que las dos bobinas cumplen con</p>
+<p><span class="math display">\[\varepsilon_p = -\frac{d\Phi_{p(t)}}{dt} = - N_p \frac{d\Phi_1}{dt} = V_p \sin (\omega t) \qquad \varepsilon_s = -\frac{d\Phi_{s(t)}}{dt} = - N_s \frac{d\Phi_1}{dt} = V_s \sin (\omega t)\]</span></p>
+<p>Si el transformador es ideal, no tiene pérdidas de energía, también se cumple que las potencias, trabajo por unidad de tiempo, son iguales. En otras palabras, la potencia de entrada es igual a la de salida.</p>
+<p><span class="math display">\[V_pI_p = V_sI_s\]</span> </p>
+</div>
+<div id="detector-de-metales" class="section level2" number="16.2">
+<h2 number="16.2"><span class="header-section-number">16.2</span> Detector de metales</h2>
+<p><strong>¿Cómo detecta, este dispositivo, que dentro del portafolios hay objetos metálicos?</strong></p>
+<p>Un detector de metales genera un campo magnético B que varía con el tiempo. Este campo se produce gracias a que en la bobina transmisora circula una corriente I variable. El campo producido atraviesa los objetos metálicos e induce corrientes parásitas en ellos.</p>
+<p>Las corrientes parásitas producen a su vez otro campo magnético alternante B’, el cual induce una corriente en la bobina I’ receptora del detector el cual activa algún tipo de alarma. </p>
+<p><strong>¿Qué característica debe tener la corriente Io en la bobina transmisora?</strong></p>
+<p>Debe ser una corriente alterna. En otra palabras una corriente periódica del tiempo que sigue la forma de una función sinusoidal. </p>
+<p><strong>¿Qué son las corrientes parásitas? ¿Cómo se generan?</strong></p>
+<p>Mejor conocidas como corrientes de Focault, son corrientes que se producen dentro de un objeto metálico gracias al campo magnético alternante de la bobina transmisora que las induce sobre él. </p>
+<p><strong>¿Cuál es la causa de la aparición de la corriente I ́ en la bobina receptora?</strong></p>
+<p>La causa es la inducción magnética que producen las corrientes parásitas variables en el objeto metálico. Como el campo magnético es variable, al venir de una corriente alterna, induce una nueva fem sobre la bobina receptora, la cual da lugar a I’. </p>
+<p><strong>¿En qué partes del proceso se pone de manifiesto el fenómeno de la inducción electromagnética? </strong></p>
+<p>Se pone en manifiesto en dos momentos. Cuando se inducen las corrientes parásitas sobre el objeto metálico que se busca detectar y cuando se induce una nueva corriente sobre el la bobina receptora.</p>
+</div>
+<div id="guitarra-eléctrica" class="section level2" number="16.3">
+<h2 number="16.3"><span class="header-section-number">16.3</span> Guitarra eléctrica</h2>
+<p><strong>¿Por qué las cuerdas de una guitarra eléctrica deben estar hechas de material ferromagnético?</strong> Las cuerdas deben estar hechas de material ferromagnético ya que estas deben magnetizarse. El movimiento de la cuerda magnetizada provoca un flujo de B variable en esa bobinas. Las cuerdas de la guitarra eléctrica en <strong>ningún</strong> momento conducen electricidad. </p>
+<p><strong>¿Qué función cumplen el imán permanente y las bobinas dentro de los pickups?</strong></p>
+<p>El imán cumple la función de magnetizar, por medio de la inducción magnética, las cuerdas de la guitarra las cuales, al moverse, producen un cambio en el flujo magnético el cual, por la ley de Faraday, por inducción electromagnética induce una fem en en las bobinas de los pickups la cual da lugar a una corriente alterna que llega al amplificador.</p>
+</div>
+<div id="disyuntor" class="section level2" number="16.4">
+<h2 number="16.4"><span class="header-section-number">16.4</span> Disyuntor</h2>
+<p>Sirve para detectar pequeñas diferencias de corriente entre la corriente que entra y la que sale, es un mecanismo de seguridad que ayuda a detectar problemas.</p>
+<p>El disyuntor diferencial es un dispositivo que permite la interrupción rápida de la corriente eléctrica cuando en la instalación se produce un punto de fuga de corriente. En condiciones normales la intensidad de corriente de entrada I1 es exactamente igual a la intensidad I2 de salida. Pero si accidentalmente algún punto de la instalación se produce fuga, por ese tramo pasará una corriente IF. Las partes fundamentales del disyuntor son: un núcleo ferromagnético que puede tener forma toroidal, tres bobinas enrolladas en él. Dos de ellas de igual número de vueltas, N1=N2, por las que pasan las corrientes de intensidades I1 e I2. La tercera bobina de N3 vueltas está conectada a un solenoide S en cuyo interior hay un imán M. Este imán M se puede mover y de este modo permite la apertura de los contactos C1 y C2 a los que está unido mecánicamente. En condiciones normales, cuando las dos corrientes son iguales, los campos magnéticos de las bobinas por donde circulan estas corrientes, se anulan dentro del núcleo… sin permitir la llegada de campo magnético a la tercera bobina. Al producirse una fuga las corrientes pasan a ser distintas, por lo que los campos no se anulan y, al no hacerlo, por inducción electromagnética se induce una fem sobre la tercera bobina la cual hace <em>”saltar”</em> el disyuntor. </p>
+<p><strong>¿Qué función cumplen las tres bobinas N1, N2 y N3 y el núcleo ferromagnético?</strong></p>
+<p>Cumple la función de detectar cuando hay una fuga en el circuito. </p>
+<p><strong>¿Por qué el dispositivo se denomina “diferencial”?</strong></p>
+<p>Se denomina diferencial ya que funciona cuando hay una mínima diferencia en las corrientes.</p>
+<p><strong>¿Cuándo se pone de manifiesto el fenómeno de inducción electromagnética en el funcionamiento del artefacto?</strong></p>
+<p>El fenómeno de inducción electromagnética se pone en evidencia cuando, al haber una fuga en el circuito, los campos de las bobinas N1 y N2, no se anulan, lo cual lleva a que haya una variación de flujo magnético en la bobina N3, induciendo una fem en ella que induce una corriente que, al llegar al electroimán, hace saltar el disyuntor.</p>
+</div>
+<div id="horno-a-inducción" class="section level2" number="16.5">
+<h2 number="16.5"><span class="header-section-number">16.5</span> Horno a inducción</h2>
+<p>Un generador provee una corriente alterna que circula por una bobina la cual funciona como “<em>hornalla</em>” al generar un campo magnético induciendo una fem que produce corrientes parásitas (de Foucault) en el material conductor metálico que se quiere calentar. Estas corrientes, por efecto Joule, producen que el objeto metálico se caliente. Este material puede calentar a su vez otro objeto.</p>
+<p>No es indispensable que el material sea ferromagnético ya que este no debe conducir flujo magnético, más bien deben conducir corriente.</p>
+<p><strong>Situación inicial:</strong> <span class="math display">\[I_1 = I_2 \qquad B_2 = -B_1 \qquad \Phi_3&#39; = 0\]</span></p>
+<p><strong>Situacion final:</strong> se produce cuando hay una <em>fuga</em>, el disyuntor puede detectarla.</p>
+<p><span class="math display">\[I_1 \neq I_2 \qquad B_2 \neq -B_1 \qquad \Phi_3 \neq 0 \qquad \vert \varepsilon_{ind} \vert \cong \frac{\Delta \Phi }{\Delta t} = \frac{\Phi_3&#39;-0}{\Delta t}\]</span></p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="preguntas-práctica-7" class="section level1" number="17">
+<h1 number="17"><span class="header-section-number">17</span> Preguntas: práctica 7</h1>
+<p><strong>¿Se puede mover una partícula cargada a través de un campo magnético sin que experimente ninguna fuerza? Si la respuesta es afirmativa, ¿cómo? Si no, ¿por qué no?</strong></p>
+<p>En caso de no haber campo eléctrico… entonces se puede solo en el caso en el que los vectores velocidad y campo magnético sean paralelos.</p>
+<p>Sí hay campo eléctrico y <span class="math inline">\(v =\frac{E}{B}\)</span> se cumple un muro, la resultante de fuerzas sobre la partícula es cero.</p>
+<p><strong>En una región del espacio sólo existe un campo magnético uniforme B.</strong></p>
+<ul>
+<li>¿Se puede mover en línea recta con velocidad constante una partícula cargada en esa región? Si su respuesta es afirmativa, explicar cómo. Si no se puede explicar por qué.</li>
+</ul>
+<p>Sí, se puede solo en el caso en el cual la velocidad sea paralela al campo magnético.</p>
+<ul>
+<li>Un conjunto de partículas de igual masa m y carga q se mueven con diferentes velocidades v perpendiculares a las líneas del campo magnético B uniforme. Demostrar que todas las partícula tienen movimiento circular uniforme de diferente radio proporcional a la velocidad y que tardan lo mismo en completar una vuelta.</li>
+</ul>
+<p>Sí la velocidad es perpendicular al campo entonces la fuerza que actúa es una fuerza centrípeta. Por lo tanto, <span class="math inline">\(qvB = \frac{mv^2}{r} \rightarrow r = \frac{mv}{qB}\)</span>. Por lo tanto vemos que es proporcional a la velocidad.</p>
+<p>El periodo es lo que tarda la partícula en dar una vuelta. En este caso <span class="math inline">\(\tau = \frac{2\pi}{\omega}\)</span> y sabemos también que <span class="math inline">\(\omega = \frac{v}{r}\)</span>. Por lo tanto <span class="math inline">\(\frac{2\pi r }{v} = \frac{2\pi m }{qB} = \tau\)</span>. Ósea… el periodo depende solamente de la masa, la carga y el campo magnético, no depende de la velocidad que tenga una partícula.</p>
+<p><strong>¿Se puede mantener en reposo una partícula cargada bajo la acción del peso y de una fuerza magnética?</strong></p>
+<p>No se puede porque para que haya fuerza magnética tiene que haber algún tipo de movimiento.</p>
+<p>¿Se puede mantener en movimiento con velocidad constante una partícula cargada bajo la acción de una fuerza electrostática y de una fuerza magnética?</p>
+<p>Sí. Se puede hacer cuando <span class="math inline">\(v = \frac{E}{B}\)</span> y además el campo magnético, el eléctrico y la velocidad son perpendiculares entre sí.</p>
+</div>
+<div id="protips-para-no-recursar." class="section level1" number="18">
+<h1 number="18"><span class="header-section-number">18</span> Protips para no recursar.</h1>
+<ul>
+<li><p>Si nos piden la ddp entre los bornes, no tenes en cuenta la resistencia interna de la batería… solo las resistencias que están en el circuito.</p></li>
+<li><p>No es lo mismo el trabajo necesario que el trabajo realizado por el campo eléctrico.</p></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
